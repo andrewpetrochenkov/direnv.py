@@ -1,8 +1,12 @@
+<!--
+https://pypi.org/project/readme-generator/
+-->
+
 [![](https://img.shields.io/pypi/pyversions/direnv.svg?longCache=True)](https://pypi.org/project/direnv/)
 [![](https://img.shields.io/pypi/v/direnv.svg?maxAge=3600)](https://pypi.org/project/direnv/)
 [![Travis](https://api.travis-ci.org/looking-for-a-job/direnv.py.svg?branch=master)](https://travis-ci.org/looking-for-a-job/direnv.py/)
 
-#### Install
+#### Installation
 ```bash
 $ [sudo] pip install direnv
 ```
@@ -10,8 +14,8 @@ $ [sudo] pip install direnv
 #### Functions
 function|`__doc__`
 -|-
-`direnv.load(path=None)`|load environment variables depending on the current directory
-`direnv.read(path=None)`|return a dictionary with environment variables depending on the current directory
+`direnv.load(path=None)` |load environment variables depending on the current directory
+`direnv.read(path=None)` |return a dictionary with environment variables depending on the current directory
 
 #### Examples
 `path/to/parent-folder/current-folder/.envrc`
@@ -26,4 +30,6 @@ function|`__doc__`
 #### Links
 +   [direnv.net](https://direnv.net/)
 
-<p align="center"><a href="https://pypi.org/project/readme-md/">readme-md</a> - README.md generator</p>
+<p align="center">
+    <a href="https://pypi.org/project/readme-generator/">readme-generator</a>
+</p>
