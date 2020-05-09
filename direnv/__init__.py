@@ -12,7 +12,7 @@ def read(path=None):
     while os.path.dirname(path) != path:
         f = os.path.join(path, ".envrc")
         if os.path.exists(f) or os.path.lexists(f):
-            vars = env_file.load(f)
+            vars = env_file.get(f)
             result.update(vars)
         path = os.path.dirname(path)
     return result
