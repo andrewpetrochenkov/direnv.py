@@ -1,9 +1,10 @@
-#!/usr/bin/env python
+__all__ = ['read', 'load']
+
+
 import env_file
 import os
-import public
 
-@public.add
+
 def read(path=None):
     """return a dictionary with environment variables depending on the current directory"""
     if not path:
@@ -18,7 +19,6 @@ def read(path=None):
     return result
 
 
-@public.add
 def load(path=None):
     """load environment variables depending on the current directory"""
     vars = read(path)

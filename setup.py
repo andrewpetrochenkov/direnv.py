@@ -1,13 +1,7 @@
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+import setuptools
 
-
-setup(
+setuptools.setup(
     name='direnv',
-    version='2020.5.9',
-    packages=[
-        'direnv',
-    ],
+    install_requires=open('requirements.txt').read().splitlines(),
+    packages=setuptools.find_packages()
 )
